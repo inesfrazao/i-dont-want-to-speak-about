@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
+} 
+
+@font-face {
+  font-family: Gallient;
+  src: url(data/gallient.tff);
+}
+
+@font-face {
+  font-family: Courier;
+  src: url(http://fonts.googleapis.com/css?family=Courier);
+}
+
+body {
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Gallient;
+  margin: 10px 0;
+  color: #fffadb;
+  font-size: 86px;
+  letter-spacing: 10px;
+}
+
+a {
+  content: counter(section, decimal-leading-zero);
+}
+  
+
+a:hover {
+  color: #d9d098;
+}
