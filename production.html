@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>I don't want to speak about, I only wish to speak nearby</title>
+<link rel="apple-touch-icon" sizes="180x180" href="data/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="data/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="data/favicon-16x16.png">
+<link rel="manifest" href="data/site.webmanifest">
+</head>
+<link rel="stylesheet" href="style-prod.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/bf0b6cd5d9.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<body>
+
+<section class="header">
+   <nav>
+   <a href="index.html"><img src="data/logo.png"></a>
+   
+   <div class="nav-links" id="navLinks">
+   <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+   <ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="shortfilms.html">Short Films</a></li>
+    <li><a href="fiction.html">Fiction</a></li>
+    <li><a href="production.html">Production</a></li>
+    </ul>
+    </div>
+    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    </section>
+
+
+    <div class="container">
+       
+        <div class="grid-item one" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+        <p>
+         The production manual is a document that comprises the whole process of thinking, developing and finalizing our fiction. <br><br>It's a testimony of our work, struggles and accomplishments that truly sums up what our experience was like whilst working on this project.
+        </p>
+        </div>
+
+        <div class="grid-item down" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+        <p>
+        scroll to continue
+        </p>
+        </div>
+        </div>
+
+    <div class="main-body">   
+        <ul>
+         <li data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+            <a href="data/fasciculo-1.pdf" target="_blank" class="itemlink first">Learning The Language
+            <!-- <img src="data/img-1.png" alt="Vase With Image"> --></a>
+            </li>
+
+        <li data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="false">
+            <a href="data/fasciculo-2.pdf" target="_blank" class="itemlink second">Creating a Fiction
+            <!--<img src="data/img-2.png" alt="Wine Glass With Image">--></a>
+            </li>
+
+        <li data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-once="false">
+            <a href="data/fasciculo-2.pdf" target="_blank" class="itemlink third">Fiction Comes to Life
+            <!-- <img src="data/img-3.png" alt="Tea Cup With Image"> --></a>
+            </li>
+
+        <li data-aos="fade-up" data-aos-delay="50" data-aos-duration="2500" data-aos-easing="ease-in-out" data-aos-once="false">
+            <a href="data/fasciculo-2.pdf" target="_blank" class="itemlink fourth">The Second Act
+            <!-- <img src="data/img-4.png" alt="Unknown With Image"> --></a>
+            </li>
+</div>
+
+<div class="footer">
+    <div class="flexbox-item projeto">
+    <p>NOW SHE TURNS HER HEAD TO THE RIGHT<br>BUT THAT MEANS NOTHING *</p>
+    </div>
+    <div class="flexbox-item cadeira">
+    <p>Communication Design VI<br>Faculty of Fine Arts University of Lisbon</p>
+    </div>
+    </div>
+
+
+
+
+<!---------JavaScript for Menu---------->
+
+<script>
+   
+   var navLinks = document.getElementById("navLinks");
+
+   function showMenu() {
+      navLinks.style.right = "0";
+   }
+
+   function hideMenu() {
+      navLinks.style.right = "-200px";
+   }
+
+</script>
+
+
+</body>
+</html>
+
+
+<!-------JavaScript Fade Effect------->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>

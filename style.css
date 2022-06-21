@@ -1,0 +1,168 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+} 
+
+
+@font-face {
+  font-family: Gallient;
+  src: url(data/gallient.tff);
+  src: url('data/gallient-webfont.woff2') format('woff2'),
+      url('data/gallient-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  background-color: #141414;
+  background-image:url('data/AnimacaoWebsite.gif'); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 105vw;
+}
+
+.nav-links{
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  width: 100%;
+  display: table;
+  text-align: center;
+}
+
+.nav-links ul li{
+  display: inline-block;
+  float: none;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+
+}
+
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Roboto Mono;
+  color: #fffadb;
+  font-size: 14px;
+}
+
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #d9d098;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: #fffadb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  
+}
+
+.text-box h1 {
+  font-size: 2.2vw;
+  font-family: Gallient;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fffadb;
+}
+
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 1vw;
+  font-family: Roboto Mono;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+@media(max-width: 800px){
+  html, body {overflow-x: hidden;}
+
+  .text-box h1 {
+  font-size: 2.5vw;
+  }
+
+  .text-box p{
+    font-size: 1.5vw;
+  }
+
+   .nav-links ul li{
+    display: block;
+    color: #141414;
+  }
+
+  .nav-links ul{
+    padding: 10px;
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: #fffadb;
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1.5rem);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    padding: 0px;
+    transition: 1s;
+  }
+
+.nav-links a{
+    color: #141414;
+  }
+
+nav .fa-solid {
+  display: block;
+  color: #141414;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+nav .fa-bars{
+  color: #fffadb;
+  float: right;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

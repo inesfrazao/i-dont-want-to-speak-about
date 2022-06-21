@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} 
+
+@font-face {
+  font-family: Gallient;
+  src: url(data/gallient.tff);
+  src: url('data/gallient-webfont.woff2') format('woff2'),
+      url('data/gallient-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #141414;
+}
+
+/*------Menu------*/
+
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img{
+  width: 350px;
+}
+
+.nav-links{
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  width: 100%;
+  display: table;
+  text-align: right;
+}
+
+.nav-links ul li{
+  display: inline-block;
+  float: none;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Roboto Mono;
+  color: #fffadb;
+  font-size: 14px;
+}
+
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #d9d098;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+/*------Responsive Menu------*/
+
+@media(max-width: 1120px){
+  html, body {overflow-x: hidden;}
+
+  .nav-links ul li{
+    display: block;
+    color: #141414;
+  }
+
+  .nav-links ul{
+    padding: 10px;
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: #fffadb;
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1.5rem);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    padding: 0px;
+    transition: 1s;
+  }
+
+.nav-links a{
+    color: #141414;
+  }
+
+nav .fa-solid {
+  display: block;
+  color: #141414;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+nav .fa-bars{
+  color: #fffadb;
+  float: right;
+  }
+}
+
+/*-----Content------*/
+
+
+.container {
+  width: 60%;
+  height: 100%;
+  display: grid;
+  margin: 0 auto;
+  overflow-y: scroll;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 560px 30px;
+  grid-gap: 0px;
+  scroll-snap-type: y mandatory;
+  overflow: hidden;
+  color: #fffadb;
+}
+
+.grid-item {
+  display: flex;
+}
+
+.one{
+  grid-column: 2/6;
+  grid-row: 1/2;
+  place-self: center;
+  font-size: 28px;
+  text-align: center;
+  font-family: Gallient;
+}
+
+.down{
+  font-family: Gallient;
+  font-size: 2vw;
+  grid-column: 1/7;
+  grid-row: 2/3;
+  place-self: center;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+/* BODY */
+.main-body {
+    background-color: #141414;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vw;
+    /* COUNTER*/
+    counter-reset: section;
+}
+
+
+/* TEXT */
+
+.main-body ul{
+    position: relative;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.main-body a {
+    display: flex;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #fffadb;
+    font-family: Gallient;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.main-body a::after{
+    position: relative;
+    top: -5px;
+    padding-left: 20px;
+    font-size: 18px;
+    counter-increment: section;
+    content: counter(section,upper-roman);
+}
+
+.first:hover{
+    cursor: url('data/img-1.png'), pointer;
+}
+
+.second:hover{
+    cursor: url('data/img-2.png'), pointer;
+}
+
+.third:hover{
+    cursor: url('data/img-3.png'), pointer;
+}
+
+.fourth:hover{
+    cursor: url('data/img-4.png'), pointer;
+}
+
+
+/* FOOTER */
+
+.footer {
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 11px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #fffadb;
+}
+
+.cadeira {
+  text-align: right;
+}
+
+@media(max-width: 1000px){
+
+
+.footer {
+  font-size: 1.5vw;
+  }
+}
+
+@media(max-width: 850px){
+  
+  .container{
+    width: 80%;
+    grid-template-rows: 150px;
+  }
+
+  .text{
+    font-size: 1.7vw;
+  }
+
+  .one{
+    font-size: 3.2vw;
+  }
+
+  .down{
+    display: none;
+  }
+
+  .footer {
+  font-size: 1.5vw;
+  }
+
+  .main-body{
+    height: 100vw;
+  }
+
+  .main-body a{
+    font-size: 4.6vw;
+    letter-spacing: 1px; 
+    padding: 10px; 
+ }
+
+.mainbody a::after {
+    font-size: 2.4vw;
+    top: -5vw;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+

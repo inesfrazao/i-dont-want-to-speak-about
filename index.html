@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>I don't want to speak about, I only wish to speak nearby</title>
+<link rel="apple-touch-icon" sizes="180x180" href="data/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="data/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="data/favicon-16x16.png">
+<link rel="manifest" href="data/site.webmanifest">
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/bf0b6cd5d9.js" crossorigin="anonymous"></script>
+<body>
+
+
+<section class="header">
+   <nav>
+   <div class="nav-links" id="navLinks">
+   <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+    <ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="shortfilms.html">Short Films</a></li>
+    <li><a href="fiction.html">Fiction</a></li>
+    <li><a href="production.html">Production</a></li>
+    </ul>
+   </div>
+   <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+   </nav>
+
+    <div class="text-box">
+    <h1>I don't want to speak about,<br>I only wish to speak nearby</h1>
+    <p>A fiction based on Agnès Varda's <i>The Gleaners and I</i></p>
+    </div>
+</section>
+
+<!---------JavaScript for Menu---------->
+
+<script>
+   
+   var navLinks = document.getElementById("navLinks");
+
+   function showMenu() {
+      navLinks.style.right = "0";
+   }
+
+   function hideMenu() {
+      navLinks.style.right = "-200px";
+   }
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+

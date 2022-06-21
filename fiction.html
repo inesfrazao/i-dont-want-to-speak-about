@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>I don't want to speak about, I only wish to speak nearby</title>
+<link rel="apple-touch-icon" sizes="180x180" href="data/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="data/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="data/favicon-16x16.png">
+<link rel="manifest" href="data/site.webmanifest">
+</head>
+<link rel="stylesheet" href="style-fiction.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/bf0b6cd5d9.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+<body>
+
+<section class="header">
+   <nav>
+   <a href="index.html"><img src="data/logo.png"></a>
+   
+   <div class="nav-links" id="navLinks">
+   <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+   <ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="shortfilms.html">Short Films</a></li>
+    <li><a href="fiction.html">Fiction</a></li>
+    <li><a href="production.html">Production</a></li>
+    </ul>
+    </div>
+    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    </section>
+
+<!------Content------->
+
+
+   
+   <div class="container">
+
+   <div class="grid-item one" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+        <p>
+         In this section you will discover the elements of our Project Room, where our fiction comes to life. <br><br>You can watch the video and also listen to the audios displayed below it, simply click on the buttons and the sound will start.<br><br>For this experience we recomend<br>
+         using headphones.<br>
+        </p>
+        </div>
+
+        <div class="grid-item down" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+        <p>
+        scroll to continue
+        </p>
+        </div>
+        </div>
+
+         <div class="grid-item video" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+        <video width="100%" controls playsinline loop>
+        <source src="data/project-room.mp4" type="video/mp4">
+        <source src="data/project-room.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+        </video>
+        </div>
+
+
+        <div class="audio-container">
+
+         <div class="first-audio">
+
+         <audio id="audio1">
+            <source src="data/ambiente.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+         </audio>
+
+         <a href="javascript:aud_play_pause();" onclick="$"><img src="data/blob1.png" width="30%"/></a>
+
+         <script>
+         function aud_play_pause() {
+           var myAudio = document.getElementById("audio1");
+           if (myAudio.paused) {
+             myAudio.play();
+           } else {
+             myAudio.pause();
+           }
+         }
+         </script>
+
+      </div>
+
+
+         <div class="second-audio">
+
+         <audio id="audio2">
+            <source src="data/diario.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+         </audio>
+
+         <a href="javascript:aud_play_pause2();"> <img src="data/blob2.png" alt="diario" width="30%"/></a>
+
+         <script>
+         function aud_play_pause2() {
+           var myAudio = document.getElementById("audio2");
+           if (myAudio.paused) {
+             myAudio.play();
+           } else {
+             myAudio.pause();
+           }
+         }
+         </script>
+      </div>
+
+      <div class="third-audio">
+
+         <audio id="audio3">
+            <source src="data/chamada.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+         </audio>
+
+         <a href="javascript:aud_play_pause3();"> <img src="data/blob3.png" alt="chamada" width="30%"/></a>
+
+         <script>
+         function aud_play_pause3() {
+           var myAudio = document.getElementById("audio3");
+           if (myAudio.paused) {
+             myAudio.play();
+           } else {
+             myAudio.pause();
+           }
+         }
+         </script>
+
+      </div>
+
+         <div class="fourth-audio">
+
+         <audio id="audio4">
+            <source src="data/memoria.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+         </audio>
+
+         <a href="javascript:aud_play_pause4();"> <img src="data/blob4.png" alt="memoria" width="30%"/></a>
+
+         <script>
+         function aud_play_pause4() {
+           var myAudio = document.getElementById("audio4");
+           if (myAudio.paused) {
+             myAudio.play();
+           } else {
+             myAudio.pause();
+           }
+         }
+         </script>
+      </div>
+
+
+
+      </div>
+
+
+    <div class="footer">
+    <div class="flexbox-item projeto">
+    <p>NOW SHE TURNS HER HEAD TO THE RIGHT<br>BUT THAT MEANS NOTHING *</p>
+    </div>
+    <div class="flexbox-item cadeira">
+    <p>Communication Design VI<br>Faculty of Fine Arts University of Lisbon</p>
+    </div>
+    </div>
+
+<!---------JavaScript for Menu---------->
+
+<script>
+   
+   var navLinks = document.getElementById("navLinks");
+
+   function showMenu() {
+      navLinks.style.right = "0";
+   }
+
+   function hideMenu() {
+      navLinks.style.right = "-200px";
+   }
+
+</script>
+
+<!-------JavaScript Fade Effect------->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
